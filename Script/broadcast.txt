@@ -1,0 +1,6 @@
+Broadcast::channel('chat', function ($user) {
+    return $user;
+});
+Broadcast::channel('private.{id}', function ($user, $id) {
+    return (int) $user->id === (int) $id ;
+});

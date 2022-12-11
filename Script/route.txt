@@ -1,0 +1,7 @@
+Route::get('/chat', [App\Http\Controllers\HomeController::class, 'chat'])->name('chat');
+Route::get('/message', [App\Http\Controllers\HomeController::class, 'allMessage'])->name('all.message');
+Route::post('/message-send', [App\Http\Controllers\HomeController::class, 'postMessage'])->name('post.message');
+Route::get('/private-chat', [App\Http\Controllers\HomeController::class, 'privateChat'])->name('private.chat');
+Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('private.contact');
+Route::get('/conversation/{id}', [App\Http\Controllers\HomeController::class, 'conversation'])->name('private.conversation');
+Route::post('/conversation/send', [App\Http\Controllers\HomeController::class, 'conversationSend'])->name('conversation.send');
