@@ -8,6 +8,20 @@
 
 5.npm install && npm run dev
 
+Go to Package.json edit script edit 
+
+  "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+
+then npm run dev run
+
 6.npm install laravel-mix@latest --save-dev
  
 7.composer require beyondcode/laravel-websockets
